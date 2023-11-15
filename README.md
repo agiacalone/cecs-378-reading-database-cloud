@@ -70,6 +70,7 @@ Suppose that two roles are defined: *Role 1* has full access rights to the cargo
    2.  Consider a database table that includes a salary attribute. Suppose the three queries *sum*, *count*, and *max* (in that order) are made on the salary attribute, all conditioned on the same predicate involving other attributes. That is, a specific subset of records is selected and the three queries are performed on that subset. Suppose that the first two queries are answered and the third query is denied. Is any information leaked?
 
 ## Deliverables
+
 Commit the answers to the questions in a readable file to your git repository by the due date and time indicated with your repository on GitHub Classroom. The only approved file submission format is Markdown. Other formats will only be accepted with explicit approval.
 
 ### Please note:
