@@ -13,10 +13,11 @@ Answer the following questions from the Chapter 5 reading from your text book. B
 service.
 	![Vet Table](vet_table.png "Vet Table")
   
-   1. Describe four problems that are likely to occur when using this table.
-   2. Break the table into two tables in a way that fixes the four problems.
+    1. Describe four problems that are likely to occur when using this table.
+   
+    2. Break the table into two tables in a way that fixes the four problems.
 
-1. Consider an SQL statement:
+5. Consider an SQL statement:
 
     ``` sql
     `\code{SELECT id,forename,surname FROM authors WHERE forename='john' AND surname='smith'}`
@@ -68,15 +69,14 @@ service.
 
 8. Imagine that you are the database administrator for a military transportation system. You have a table named cargo in your database that contains information on the various cargo holds available on each outbound airplane. Each row in the table represents a single shipment and lists the contents of that shipment and the flight identification number. Only one shipment per hold is allowed. The flight identification number may be cross-referenced with other tables to determine the origin, destination, flight time, and similar data. The cargo table appears as follows:
    
+    ![nukes](military_db.png "Military DB")
 
-  ![nukes](military_db.png "Military DB")
 
+    Suppose that two roles are defined: *Role 1* has full access rights to the cargo table. *Role 2* has full access rights only to rows of the table in which the Classification field has the value Unclassified. Describe a scenario in which a user assigned to *role 2* uses one or more queries to determine that there is a classified shipment on board the aircraft.
 
-Suppose that two roles are defined: *Role 1* has full access rights to the cargo table. *Role 2* has full access rights only to rows of the table in which the Classification field has the value Unclassified. Describe a scenario in which a user assigned to *role 2* uses one or more queries to determine that there is a classified shipment on board the aircraft.
+    1. Users *luke* and *leih* do not have the SELECT access right to the Inventory table and the Item table. These tables were created by and are owned by user *palpatine*. Write the SQL commands that would enable *palpatine* to grant *SELECT* access to these tables to *luke* and *leih*.
 
-   1. Users *luke* and *leih* do not have the SELECT access right to the Inventory table and the Item table. These tables were created by and are owned by user *palpatine*. Write the SQL commands that would enable *palpatine* to grant *SELECT* access to these tables to *luke* and *leih*.
-
-   2.  Consider a database table that includes a salary attribute. Suppose the three queries *sum*, *count*, and *max* (in that order) are made on the salary attribute, all conditioned on the same predicate involving other attributes. That is, a specific subset of records is selected and the three queries are performed on that subset. Suppose that the first two queries are answered and the third query is denied. Is any information leaked?
+    2.  Consider a database table that includes a salary attribute. Suppose the three queries *sum*, *count*, and *max* (in that order) are made on the salary attribute, all conditioned on the same predicate involving other attributes. That is, a specific subset of records is selected and the three queries are performed on that subset. Suppose that the first two queries are answered and the third query is denied. Is any information leaked?
 
 ### Deliverables
 
