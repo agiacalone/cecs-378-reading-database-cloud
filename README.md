@@ -20,7 +20,7 @@ service.
 5. Consider an SQL statement:
 
     ``` sql
-    `\code{SELECT id,forename,surname FROM authors WHERE forename='john' AND surname='smith'}`
+    \code{SELECT id,forename,surname FROM authors WHERE forename='john' AND surname='smith'}
     ```
     
     1. What is this statement intended to do?
