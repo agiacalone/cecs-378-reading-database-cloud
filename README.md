@@ -17,21 +17,29 @@ service.
    2. Break the table into two tables in a way that fixes the four problems.
 
 1. Consider an SQL statement:
-   
- `\code{SELECT id,forename,surname FROM authors WHERE forename='john' AND surname='smith'}`
 
+    ``` sql
+    `\code{SELECT id,forename,surname FROM authors WHERE forename='john' AND surname='smith'}`
+    ```
+    
     1. What is this statement intended to do?
     2. Assume that the forename and surname fields are being gathered from user-supplied input, and suppose the user responds with:
+
+        ``` sql
         Forename: jo'hn
         Surname: smith
+        ```
 
-        What will be the effect?
+           What will be the effect?
     
     3. Now suppose the user responds with:
+ 
+        ``` sql
         Forename: jo'; drop table authors--
         Surname: smith
-
-        What will be the effect?
+        ```
+       
+           What will be the effect?
 
 
 6. The following shows a fragment of code that implements the login functionality for a database application. The code dynamically builds an SQL query and submits it to a database.
@@ -53,6 +61,7 @@ service.
     ```
 
     1. Suppose a user submits login, password, and pin as *doe*, *secret*, and *123*. Show the SQL query that is generated.
+ 
     2. Instead, the user submits for the login field the following: {' or 1 = 1 - -}. What is the effect?
 
 7. Consider the parts department of a plumbing contractor. The department maintains an inventory database that includes parts information (part number, description, color, size, number in stock, etc.) and information on vendors from whom parts are obtained (name, address, pending purchase orders, closed purchase orders, etc.). In an RBAC system, suppose that roles are defined for accounts payable clerk, an installation foreman, and a receiving clerk. For each role, indicate which items should be accessible for read-only and read-write access.
