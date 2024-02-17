@@ -63,7 +63,7 @@ service.
 
     1. Suppose a user submits login, password, and pin as *doe*, *secret*, and *123*. Show the SQL query that is generated.
  
-    2. Instead, the user submits for the login field the following: {' or 1 = 1 - -}. What is the effect?
+    2. Instead, the user submits for the login field the following: `{' or 1 = 1 - -}`. What is the effect?
 
 7. Consider the parts department of a plumbing contractor. The department maintains an inventory database that includes parts information (part number, description, color, size, number in stock, etc.) and information on vendors from whom parts are obtained (name, address, pending purchase orders, closed purchase orders, etc.). In an RBAC system, suppose that roles are defined for accounts payable clerk, an installation foreman, and a receiving clerk. For each role, indicate which items should be accessible for read-only and read-write access.
 
